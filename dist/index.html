@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schisti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/index-B2zzPzzx.css">
+  </head>
+  <body>
+    <header>
+      <nav class="mx-24 my-4 flex justify-between max-xl:mx-3">
+        <div class="flex gap-14 items-center">
+          <div>
+            <img src="/assets/Mask%20group-bJwFTLSk.png" alt="" />
+          </div>
+          <div id="nav-menu" class="flex gap-9 max-xl:hidden">
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-medium text-indigo-400 leading-7"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Who We Serve</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Resources</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >API</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex gap-4 max-sm:hidden">
+            <button
+              class="font-bold text-base bg-[#007AB6] py-4 px-4 hover:bg-slate-500 text-white rounded-xl max-md:text-xs max-md:leading-3"
+            >
+              REQUEST A DEMO
+            </button>
+            <button
+              class="font-bold text-base py-4 px-4 text-cyan-600 border rounded-xl border-cyan-500"
+            >
+              LOGIN
+            </button>
+          </div>
+          <div class="py-6 px-6 text-4xl xl:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div
+          id="nav-bar"
+          class="transform -translate-y-full transition-transform duration-700 fixed bg-gray-300 inset-0"
+        >
+          <div class="flex items-center justify-between mx-6 my-4">
+            <div>
+              <img src="/assets/Mask%20group-bJwFTLSk.png" alt="" />
+            </div>
+            <div class="flex text-4xl xl:hidden" onclick="handleMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div id="nav-menu" class="flex flex-col pl-14 gap-5">
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-medium text-indigo-400 leading-7"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Who We Serve</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Resources</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="Plus Jakarta Sans text-lg font-normal hover:text-indigo-400 leading-7"
+              >API</a
+            >
+          </div>
+          <div class="flex flex-col mx-11 mt-7 gap-4 sm:hidden">
+            <button
+              class="font-bold text-base bg-blue-400 hover:bg-slate-500 py-4 px-4 text-white rounded-xl max-md:text-xs max-md:leading-3"
+            >
+              REQUEST A DEMO
+            </button>
+            <button
+              class="font-bold text-base py-4 px-4 text-cyan-600 border rounded-xl border-cyan-500"
+            >
+              LOGIN
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="flex items-center justify-center bg-[#F5F6FA]">
+        <div
+          class="flex w-[1240px] m-auto max-xl:w-[100%] max-xl:justify-center"
+        >
+          <div
+            class="flex items-center justify-center max-xl:flex-col max-xl:items-center max-xl:justify-center max-md:p-4"
+          >
+            <div class="w-[717px] max-md:w-[100%]">
+              <div class="">
+                <h1 class="font-bold text-5xl leading-relaxed max-md:text-2xl">
+                  Top Contractors Worldwide Rely On Schesti
+                </h1>
+              </div>
+              <div class="w-[676px] max-md:w-[100%]">
+                <p
+                  class="font-[sans] leading-9 text-lg font-normal text-customTextColor max-md:text-sm"
+                >
+                  Discover why over 1 million contractors have chosen Schesti to
+                  facilitate the construction of more than $1 trillion worth of
+                  projects annually. Schesti boasts the largest network, the
+                  most comprehensive project data, and cutting-edge tools for
+                  Time Schedule management, bid management, invoicing,
+                  networking, takeoff, and estimating in the industry.
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <img src="/assets/Group%201000004108-yzcF6bAb.png" alt="" />
+              <!-- <div class="w-[462px]">
+                    </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mb-[168px] max-md:mb-[70px]">
+        <div
+          class="flex w-[1240px] flex-col m-auto max-xl:w-[100%] max-xl:justify-center justify-center items-center"
+        >
+          <div class="py-[18px] max-md:px-3">
+            <div
+              class="Plus Jakarta Sans text-[40px] font-bold leading-[50px] max-md:text-2xl"
+            >
+              <h1 class="text-center">
+                Why Choose <span class="text-[#007AB6]">Schesti?</span>
+              </h1>
+            </div>
+            <div
+              class="font-[Poppins] pt-[18px] text-xl text-center w-[870px] leading-[38px] font-normal text-[#404B5A] max-xl:w-[100%] max-md:text-sm"
+            >
+              <p class="text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex gap-[30px] max-xl:flex-col max-xl:items-center max-xl:justify-center max-md:p-3"
+          >
+            <div class="">
+              <img src="/assets/Group%201261154297-Bmwcw9WO.png" alt="" />
+            </div>
+            <div
+              class="w-[580px] max-xl:w-[100%] max-xl:px-1 font-[Poppins] max-md:text-sm text-lg leading-9 font-normal text-[#404B5A] pt-[19px]"
+            >
+              <p>
+                Simplifying excellence in construction work. Schesti stands as
+                the premier bid management application for general contractors
+                and subcontractors seeking a streamlined and efficient approach
+                to their work. Crafted by Professional Engineers (PE) and
+                General Contractors for contractors, subcontractors, and
+                industry professionals alike.<br />
+                Our goal is to provide a straightforward, cost-effective,
+                user-friendly, and potent solution for the cumbersome
+                construction bidding process. We introduce the first invoicing
+                modules worldwide, catering to all contractors, subcontractors,
+                vendors, and owners in one unified platform. Our commitment and
+                enthusiasm for enhancing the construction sector continually
+                inspire new ideas and innovative platform features that benefit
+                construction professionals across the nation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex">
+        <div
+          class="flex w-[1240px] m-auto max-xl:w-[100%] max-xl:justify-center justify-center"
+        >
+          <div
+            class="flex gap-[28px] max-md:gap-[2px] flex-wrap max-md:flex-col max-md:items-center"
+          >
+            <div class="w-[263px]">
+              <div class="">
+                <h1
+                  class="font-manrope font-bold text-[40px] leading-[40px] text-[#181D25] text-center pb-[8px]"
+                >
+                  30%
+                </h1>
+              </div>
+              <div class="">
+                <p
+                  class="font-serif font-normal text-[18px] leading-[18px] text-[#181D25] text-center"
+                >
+                  Increase in Efficiency
+                </p>
+              </div>
+            </div>
+            <div class="max-md:rotate-90">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABYCAYAAADfoya1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF3SURBVHgBNVNRlhMxDJPttMsAX90LcBTufxUePHgPdtg2cVZy0vbHkSVZ8cwE5jSYecC+N+CbOW5n4OcZDb964BVwHLfA2wzH+SNw++wkHo4/lOGv8XAn8vXqwBsaHhnAJxadxSH5hYY8ELmyNdlqkwVYjFU4jO5EadaJCgm1QrNCB5LzqYLpMDnQHT5jkafkycwuTsYmTwT/KKIErVRj0MOIhG0Op25yYLVG2m41tUQWx0jIipG+RohXLB+M4bqO66aaxR2ZwmPSwudCSiFDPKd7JaRbqhhawUypdKbKbMCy5J1KGY4kymkpspFsLDIVw8WpJeXahlqz7kUfiFOquoVGVPgnopbNPbQSYnY661F7antsjbEeXLYhJeV9rLUM05ZkaBtR1CLP1hf5Qp+HnAdVwwQ+nj7XHUM+pfL7kJejy/nOIo6BM7j+5royX5n7f7a0wS8tMd+5jfd/A5dK2DtOo/N8SVzl/Nv2iJe2i9ejCqvPgb8P6xK9hxFlnBoAAAAASUVORK5CYII=" alt="" />
+            </div>
+            <div class="w-[263px]">
+              <div class="">
+                <h1
+                  class="font-manrope font-bold text-[40px] leading-[40px] text-[#181D25] text-center pb-[8px]"
+                >
+                  36%
+                </h1>
+              </div>
+              <div class="">
+                <p
+                  class="font-serif font-normal text-[18px] leading-[18px] text-[#181D25] text-center"
+                >
+                  More Bids Submitted
+                </p>
+              </div>
+            </div>
+            <div class="max-md:rotate-90">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABYCAYAAADfoya1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF3SURBVHgBNVNRlhMxDJPttMsAX90LcBTufxUePHgPdtg2cVZy0vbHkSVZ8cwE5jSYecC+N+CbOW5n4OcZDb964BVwHLfA2wzH+SNw++wkHo4/lOGv8XAn8vXqwBsaHhnAJxadxSH5hYY8ELmyNdlqkwVYjFU4jO5EadaJCgm1QrNCB5LzqYLpMDnQHT5jkafkycwuTsYmTwT/KKIErVRj0MOIhG0Op25yYLVG2m41tUQWx0jIipG+RohXLB+M4bqO66aaxR2ZwmPSwudCSiFDPKd7JaRbqhhawUypdKbKbMCy5J1KGY4kymkpspFsLDIVw8WpJeXahlqz7kUfiFOquoVGVPgnopbNPbQSYnY661F7antsjbEeXLYhJeV9rLUM05ZkaBtR1CLP1hf5Qp+HnAdVwwQ+nj7XHUM+pfL7kJejy/nOIo6BM7j+5royX5n7f7a0wS8tMd+5jfd/A5dK2DtOo/N8SVzl/Nv2iJe2i9ejCqvPgb8P6xK9hxFlnBoAAAAASUVORK5CYII=" alt="" />
+            </div>
+            <div class="w-[263px]">
+              <div class="">
+                <h1
+                  class="font-manrope font-bold text-[40px] leading-[40px] text-[#181D25] text-center pb-[8px]"
+                >
+                  25%
+                </h1>
+              </div>
+              <div class="">
+                <p
+                  class="font-serif font-normal text-[18px] leading-[18px] text-[#181D25] text-center"
+                >
+                  Higher Revenue
+                </p>
+              </div>
+            </div>
+            <div class="max-md:rotate-90">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABYCAYAAADfoya1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF3SURBVHgBNVNRlhMxDJPttMsAX90LcBTufxUePHgPdtg2cVZy0vbHkSVZ8cwE5jSYecC+N+CbOW5n4OcZDb964BVwHLfA2wzH+SNw++wkHo4/lOGv8XAn8vXqwBsaHhnAJxadxSH5hYY8ELmyNdlqkwVYjFU4jO5EadaJCgm1QrNCB5LzqYLpMDnQHT5jkafkycwuTsYmTwT/KKIErVRj0MOIhG0Op25yYLVG2m41tUQWx0jIipG+RohXLB+M4bqO66aaxR2ZwmPSwudCSiFDPKd7JaRbqhhawUypdKbKbMCy5J1KGY4kymkpspFsLDIVw8WpJeXahlqz7kUfiFOquoVGVPgnopbNPbQSYnY661F7antsjbEeXLYhJeV9rLUM05ZkaBtR1CLP1hf5Qp+HnAdVwwQ+nj7XHUM+pfL7kJejy/nOIo6BM7j+5royX5n7f7a0wS8tMd+5jfd/A5dK2DtOo/N8SVzl/Nv2iJe2i9ejCqvPgb8P6xK9hxFlnBoAAAAASUVORK5CYII=" alt="" />
+            </div>
+            <div class="w-[263px]">
+              <div class="">
+                <h1
+                  class="font-manrope font-bold text-[40px] leading-[40px] text-[#181D25] text-center pb-[8px]"
+                >
+                  100K+
+                </h1>
+              </div>
+              <div class="">
+                <p
+                  class="font-serif font-normal text-[18px] leading-[18px] text-[#181D25] text-center"
+                >
+                  Projects Completed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-lg:pb-7">
+        <div
+          class="flex w-[1240px] m-auto max-xl:w-[100%] max-xl:justify-center h-[476px] max-lg:h-[100%]"
+        >
+          <div
+            class="flex justify-between w-[100%] items-center max-lg:flex-col max-lg:gap-[20px] max-lg:mt-[70px] max-lg:px-3"
+          >
+            <div class="left w-[715px] max-lg:w-[100%]">
+              <div class="">
+                <h1
+                  class="Plus Jakarta Sans text-[40px] font-bold pb-[30px] max-lg:text-[20px]"
+                >
+                  Discover Schesti-
+                  <span class="text-[#007AB6]"
+                    >The Ultimate Solution for Construction</span
+                  >
+                </h1>
+              </div>
+              <div class="">
+                <p
+                  class="font-[Poppins] leading-[36px] text-[18px] font-normal pb-[42px] max-lg:text-[15px]"
+                >
+                  Empower Your Projects With Schesti: Estimating construction
+                  projects shouldn't be a headache. We offers a solution that
+                  streamlines the process for you.<br />
+                  Discover the ease and efficiency of Schesti's estimating
+                  feature today.
+                </p>
+              </div>
+              <div class="">
+                <button
+                  class="text-[#FFFFFF] text-[18px] leading-[27px] text-center bg-[#007AB6] py-[15px] px-[24px] rounded-[39px] font-[Poppins]"
+                >
+                  Get start with Schesti
+                </button>
+              </div>
+            </div>
+            <div class="right">
+              <img src="/assets/Frame%202147224446-Dq8h00qL.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-[#007AB6] max-lg:pt-7">
+        <div
+          class="flex w-[1240px] m-auto max-xl:w-[100%] max-xl:justify-center justify-center h-[369px] max-lg:h-[100%] items-center max-xl:px-5"
+        >
+          <div class="flex w-[100%] justify-between max-md:flex-col flex-wrap">
+            <div
+              class="w-[635px] flex justify-between max-lg:flex-col-reverse max-lg:justify-center max-lg:gap-[20px] max-lg:w-[100%]"
+            >
+              <div class="flex flex-col gap-[40px]">
+                <div class="">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAAhCAYAAAD50tTuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVWSURBVHgB7VtNVuM4EC57WPSu0yfA7GYZTjDmBN2cgHACwglIThD6BElOQOYEMScgs5td3Ccg7GYzqOuLKo1iJNlOQCav/b1Xz0R/lqtUPyoJogOCUmqi7JhTi1Ic+SqZiV1+pEzHTB0p/sG0YMqiKFpRi4OBVdgs5B4/rpi6vs7QNH4MWeg5tfgweBwnrJifIL/k/2e6/yOm7Mvlv3lkNmLhJfwYk9bmOrhmgd/SO0MW14WlClbmjFqwoP9M+AG3lhjFOdF/p780WwRdbFQVI+7/mRk+pBZN44ZeyzB5fv7Uj42CO3ILOmM6ZzplggZNLW0GLPCUWjSN1FYYRaq7Frb4aJd/hk8+Y5oxLZhgMtH+hNbmYQtjHqtDLZpEbitkmT1uNPvG0/nW0TknreVmRP43tWgaU0f5MJbtVeJokPu2VyLw76RXE7S/327HmgVH3RN+XNKLhmdMZ4jGYcK/KTcey8wy6kOZ7japsh9gxn2CQp3PxEO7V602HwaOKrTps+bgOXwroUrU/pW2Fxoycwj+MmrxPigx4yaWErXv+66HXd9Tx4yrmiafy7uoU9p1VcHYMU7KNJLv9I11bPTZF3NjrKWjzQBmPKNqSEhvrTBYj2pCmIO9fLfie24oEJROKGFuKfndmm8MxC4j0ompPunv/FDb0FhM87RGn4RqCl2Y4GqLrNu5kDkPJGn6FAYp+TOHuYWeCm3wjf0a/YNj47MHTH9RvVQp2kLoSLifuw5DpN7FBPSbGb9n3D6nl6Dwhn9PAgSAiafupOygR+kYpGepwrddVpi/La+PxWOzglCISaGsEn/WwsbH8IShWTBBdU0PJrTWch5ny0KIeXQJelIQNMlcoNE47EDfhcynKWFnFU/0Lhzl91UWqi0oZR64+uW7BrGx8UIwFrnvnHYDAqJvhbKU3Iz0uQ4kaq4lTZvTx0fiKL+y8KQxbG29hLEniNxIr9aE6gFm3bzUcOVq6FudOxyXJpb44ZiaR8J0x3ODImFxz5pcvLGtEKaU3KdbPsDkmmbbFXkv6G2RkD6HNymlcPhRUg8+wAfD3c1VQ6eDsasCK9A43aojdAR6mytNLhxKxm2z9y7SXaHdrPqQ60U4D7m13KA0gyZmp6f0LRFoTFLSZSPkkHvMFb1eQB3afw7on1rKc/MHAk3mDxTigqoDgehTFOCGzwZx1YbiY2Ha85KmGwaH1F6cs5+YRIGPW8UKmqdNVXBFAVFZ2IBo+WVJs1XhecjISLuxIlnvuzF/JrLQwCOY9jIeILAMZgF/CRt74irBg2i47yNyaZd72iV0IJDY5RWV9IHQkTD6QuXa/pkCIZacLoKFB9L+aUT7YeH424R3RcvCG0tS5qBhaHvmaPJEgQDNRtZsQC++tiu5bCtkP+szPeYN0++edr5oHYFOj+lB7XnS9oFwbynLo4B3ASBsm0Bwhj0qapaYeN+WYWKaOEmHurTbOo5s2QbyE4sqo/eHi+G+BVkXXy1lGQXEEcyMMLgYGSI5gi1XRpoZXfJ/fM50bSmHz3qwlKfiPqaSm+/IHMykzDBQxil3lHdkT/2PpW5lbpvkhM5m8eCTbbzLadsKhgNP9lbtjqXPv8IUV+hfxMQyzrtcXlD6wkFdLAtjLGv0xaWGsn+tmjv6Dkr6LV39zIMQrMy6+0QAbuDUp4GwHuQ/ZEmKY8q+NQhkhxFKyzLS/FpQYES2QqWDIgRJrtsWGemA47ZugGGMnRaqMA58/NR1SKJ0zJBYqlbF49I6bY0+aO/6Zu84Sp9u+frh+7Kq/PLMf+FbKJ55LCIqf2lHXrqe5Fv6UGWY/kC++bfGT3ckDV0of2flAAAAAElFTkSuQmCC" alt="" />
+                </div>
+                <div class="">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAALCAYAAACqG3kOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK5SURBVHgBxVihcuswELxkAgIDAwUDDQ0DAx8sNOznvE94sLCw0DCw0NDQ0NAs79ZexaomaXRK2uyMxrJkrU+n1enshRCn02mtl0KL07Jmc6Plc7FYDJII8pRatuTB2EY5PsUI5TqQ4yO0ge2ibR+JPFvadBHK8y42u3Z6QTnq2E4yoTwFeby/wVWn+Jtj3ZXubsWHNnqptGzY0bPu9CVHSTc05hlo9A59ylWLDTtygeMtageSFpbji2/6TQurOMg8R+tYL/4XmRfm7G8t2AApYsGz1+bUrlipSIxFPCuGyrSgIk8tk5qHYLH3Wu9zdq5Mwtjp2EYyoONaHf+XtyULhGLebdz9m8CutSWiERCG4/v/Bf5GW5/IAVHXrEMksMvPUZYkg6Fw+peQZ3EkRQAehO6zOPQKQ/1uKyQP4PpDpWcBdtAWP78haLPAh3Q4doxGYgCFDj+Mfon83aaKBM/Fc/L3KEuZw0HOTgqx5bW5YASU2cv1M+EWapmceJDnw8m00+AvONQqVu+nLkNUyVjK47C50T9OImfX8ZxvtRSMME9BEN2O3FkQsTPOyT9rDd8mYGH76IW58OfVtQWGUoeM88gDScoYkuV+W3Phd2epi1nJHIEsu/aWnx4CLKwPnQXjfy68wWWsYL3HubSWC2E6FQxbtcxZ8jPgZM70Q19Zzll/JrqfjD4rZq611vdaKq0fZTYenztvKUTMPDEWi/ga8DiZFI16LXcAIZlJmpNfRpAcvoeZPb+pS37O3TwzA39j3IvWIfaW3QX57z57V3xZrS9AdS9RgmJJ55FVk6eMeHwG+IhkASH5VX4fPty2UTsWpmR/LQmgQCUYF4byh0SjRXjDEOpk/mOUnH5HPFC2//OE9LuVDPhQFY/nt6Tk/PWhbSid8Y+akylH6Cx9ibw+rDeZ/h59HfrpP/+ySCmGZaajAAAAAElFTkSuQmCC" alt="" />
+                  <h1
+                    class="font-[Poppins] text-[22px] leading-[33px] font-medium text-[#FFFFFF] pt-[24px]"
+                  >
+                    Support@Schesti.com
+                  </h1>
+                </div>
+              </div>
+              <div class="flex gap-[60px] max-lg:justify-between">
+                <a
+                  class="font-[Cabin] font-normal text-[#FFFFFF] text-[16px] leading-[19.44px]"
+                  href="#"
+                  >Home</a
+                >
+                <a
+                  class="font-[Cabin] font-normal text-[#FFFFFF] text-[16px] leading-[19.44px]"
+                  href="#"
+                  >Plans</a
+                >
+                <a
+                  class="font-[Cabin] font-normal text-[#FFFFFF] text-[16px] leading-[19.44px]"
+                  href="#"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <div class="right w-[312px] max-md:w-[100%]">
+              <div class="flex flex-col gap-[23px]">
+                <div class="">
+                  <h1
+                    class="font-[Inter] font-semibold leading-[34px] text-[18px] text-[#FFFFFF]"
+                  >
+                    Newsletter 
+                  </h1>
+                  <p
+                    class="font-[Poppins] font-normal leading-[26px] text-[#FCFCFD] text-[16px] pt-[6px]"
+                  >
+                    Stay informed on how you can make difference
+                  </p>
+                </div>
+                <div
+                  class="flex items-center justify-between bg-white w-[312px] max-md:w-[282px] rounded-[8px]"
+                >
+                  <div class="">
+                    <input
+                      class="py-[14px] pl-[14px] w-[100%] rounded-[8px] border-[none] outline-none"
+                      type="text"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="bg-white pr-3">
+                    <img class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIISURBVHgBnVRNbtNAFP6eE9qqq3ACfAPcE1AvaYQgJ6hzg2yQSje4mygSi5ATND1BQCiwbG6AuYGPkBXUUjKPN8/juknsuO0nJc/jefP5m/dHqMPFj1NQ6z2IxZIPRgeEpewkMPLjbIJRL606Srtkv3x4PJanD2gETWHurrbJvQ2fy3kghLeOcAnDE5h1iL/ZSwzPSK1dM27yAxzBO7zFxcyvVportIS+vF1gnfXrrnfvT3wtvqe5gOyk8G+Xmh2hVTE8i9CE0VtLEOLTz6kQn8M7mMn6pLz+5TxyhCn+ZQM8BYfib8+BAuGJS1LQZzXMV/jaW1Yeth/eip0iFn9e9x3PeU5qk1OoHHWnqIdflRTF6N3ClZuPj/PAKg1ylfQHzagnNviu9gWCtjqqZpNsOGl8XFiqicON6iBOXTH5Hp4D3r9tlab5o/dqY2fYjeU/vl8Xym3sOQt3a5heq1lRYpW6a3NzW9YSKlxuOPVEUeIy19EhUgezh/BhnX/pJp5jn6j1WtcYzDqVpLbcqgjV/0Gdoyh+Gz/tCvna8cEYT8Hx0RhbdV72PlMo/f9bbCT9LE6PGCgtGSgs87aItQPtOJIMFnK1q/NydYO7VaLta6961A50eHuIdHBbQuKe5qaStCSOdfI045vM2P72vCDsux7MAC28kZDIM2wCl9o5LC1pzEJ7vgL/Ad397FlIZEmGAAAAAElFTkSuQmCC" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex w-[1240px] m-auto max-xl:w-[100%] border-t-2 border-[#FFFFFF24] h-[64px] items-center justify-between max-md:flex-col max-md:h-[100%] max-md:gap-5 max-md:pt-5 px-4 max-lg:mt-5"
+        >
+          <div class="flex items-center gap-[45px] max-md:w-[100%]">
+            <h1
+              class="font-[DM Sans] font-normal text-[14px] leading-[18.23px] text-[#FFFFFF]"
+            >
+              Terms & Conditions
+            </h1>
+            <h1
+              class="font-[DM Sans] font-normal text-[14px] leading-[18.23px] text-[#FFFFFF]"
+            >
+              Privacy Policy
+            </h1>
+          </div>
+          <div class="max-md:w-[100%]">
+            <h1
+              class="font-[Poppins] font-normal text-[16px] leading-[24px] text-[#FFFFFF]"
+            >
+              © 2023 Schesti | All Rights Reserved
+            </h1>
+          </div>
+          <div
+            class="flex gap-[24px] max-md:w-[100%] max-md:gap-[70px] max-md:pb-4"
+          >
+            <svg
+              width="23"
+              height="22"
+              viewBox="0 0 23 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_924)">
+                <path
+                  d="M20.4481 0H1.70088C0.802832 0 0.0766602 0.708984 0.0766602 1.58555V20.4102C0.0766602 21.2867 0.802832 22 1.70088 22H20.4481C21.3462 22 22.0767 21.2867 22.0767 20.4145V1.58555C22.0767 0.708984 21.3462 0 20.4481 0ZM6.60361 18.7473H3.33799V8.2457H6.60361V18.7473ZM4.9708 6.81484C3.92236 6.81484 3.07588 5.96836 3.07588 4.92422C3.07588 3.88008 3.92236 3.03359 4.9708 3.03359C6.01494 3.03359 6.86143 3.88008 6.86143 4.92422C6.86143 5.96406 6.01494 6.81484 4.9708 6.81484ZM18.8239 18.7473H15.5626V13.6426C15.5626 12.4266 15.5411 10.8582 13.8653 10.8582C12.1681 10.8582 11.9103 12.1859 11.9103 13.5566V18.7473H8.65322V8.2457H11.7813V9.68086H11.8243C12.2583 8.85586 13.3239 7.98359 14.9095 7.98359C18.2138 7.98359 18.8239 10.1578 18.8239 12.9852V18.7473Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_924">
+                  <rect
+                    width="22"
+                    height="22"
+                    fill="white"
+                    transform="translate(0.0766602)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              width="10"
+              height="20"
+              viewBox="0 0 10 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.18829 3.37261H9.99997V0.217256C9.68741 0.174259 8.61247 0.0775146 7.36059 0.0775146C4.74849 0.0775146 2.95914 1.72051 2.95914 4.74025V7.51938H0.0766602V11.0468H2.95914V19.9225H6.4932V11.0476H9.25909L9.69816 7.5202H6.49237V5.09002C6.4932 4.07049 6.76772 3.37261 8.18829 3.37261Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              width="25"
+              height="26"
+              viewBox="0 0 25 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_927)">
+                <path
+                  d="M12.5 2.75098C15.8398 2.75098 16.2354 2.76562 17.5488 2.82422C18.7695 2.87793 19.4287 3.08301 19.8682 3.25391C20.4492 3.47852 20.8691 3.75195 21.3037 4.18652C21.7432 4.62598 22.0117 5.04102 22.2363 5.62207C22.4072 6.06152 22.6123 6.72559 22.666 7.94141C22.7246 9.25977 22.7393 9.65527 22.7393 12.9902C22.7393 16.3301 22.7246 16.7256 22.666 18.0391C22.6123 19.2598 22.4072 19.9189 22.2363 20.3584C22.0117 20.9395 21.7383 21.3594 21.3037 21.7939C20.8643 22.2334 20.4492 22.502 19.8682 22.7266C19.4287 22.8975 18.7646 23.1025 17.5488 23.1563C16.2305 23.2148 15.835 23.2295 12.5 23.2295C9.16016 23.2295 8.76465 23.2148 7.45117 23.1563C6.23047 23.1025 5.57129 22.8975 5.13184 22.7266C4.55078 22.502 4.13086 22.2285 3.69629 21.7939C3.25684 21.3545 2.98828 20.9395 2.76367 20.3584C2.59277 19.9189 2.3877 19.2549 2.33398 18.0391C2.27539 16.7207 2.26074 16.3252 2.26074 12.9902C2.26074 9.65039 2.27539 9.25488 2.33398 7.94141C2.3877 6.7207 2.59277 6.06152 2.76367 5.62207C2.98828 5.04102 3.26172 4.62109 3.69629 4.18652C4.13574 3.74707 4.55078 3.47852 5.13184 3.25391C5.57129 3.08301 6.23535 2.87793 7.45117 2.82422C8.76465 2.76562 9.16016 2.75098 12.5 2.75098ZM12.5 0.5C9.10645 0.5 8.68164 0.514648 7.34863 0.573242C6.02051 0.631836 5.10742 0.84668 4.31641 1.1543C3.49121 1.47656 2.79297 1.90137 2.09961 2.59961C1.40137 3.29297 0.976562 3.99121 0.654297 4.81152C0.34668 5.60742 0.131836 6.51562 0.0732422 7.84375C0.0146484 9.18164 0 9.60645 0 13C0 16.3936 0.0146484 16.8184 0.0732422 18.1514C0.131836 19.4795 0.34668 20.3926 0.654297 21.1836C0.976562 22.0088 1.40137 22.707 2.09961 23.4004C2.79297 24.0938 3.49121 24.5234 4.31152 24.8408C5.10742 25.1484 6.01562 25.3633 7.34375 25.4219C8.67676 25.4805 9.10156 25.4951 12.4951 25.4951C15.8887 25.4951 16.3135 25.4805 17.6465 25.4219C18.9746 25.3633 19.8877 25.1484 20.6787 24.8408C21.499 24.5234 22.1973 24.0938 22.8906 23.4004C23.584 22.707 24.0137 22.0088 24.3311 21.1885C24.6387 20.3926 24.8535 19.4844 24.9121 18.1563C24.9707 16.8232 24.9854 16.3984 24.9854 13.0049C24.9854 9.61133 24.9707 9.18652 24.9121 7.85352C24.8535 6.52539 24.6387 5.61231 24.3311 4.82129C24.0234 3.99121 23.5986 3.29297 22.9004 2.59961C22.207 1.90625 21.5088 1.47656 20.6885 1.15918C19.8926 0.851562 18.9844 0.636719 17.6562 0.578125C16.3184 0.514648 15.8936 0.5 12.5 0.5Z"
+                  fill="white"
+                />
+                <path
+                  d="M12.5 6.5791C8.95508 6.5791 6.0791 9.45508 6.0791 13C6.0791 16.5449 8.95508 19.4209 12.5 19.4209C16.0449 19.4209 18.9209 16.5449 18.9209 13C18.9209 9.45508 16.0449 6.5791 12.5 6.5791ZM12.5 17.165C10.2002 17.165 8.33496 15.2998 8.33496 13C8.33496 10.7002 10.2002 8.83496 12.5 8.83496C14.7998 8.83496 16.665 10.7002 16.665 13C16.665 15.2998 14.7998 17.165 12.5 17.165Z"
+                  fill="white"
+                />
+                <path
+                  d="M20.6738 6.3252C20.6738 7.15528 20 7.82422 19.1748 7.82422C18.3447 7.82422 17.6758 7.15039 17.6758 6.3252C17.6758 5.49512 18.3496 4.82617 19.1748 4.82617C20 4.82617 20.6738 5.5 20.6738 6.3252Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_927">
+                  <rect
+                    width="25"
+                    height="25"
+                    fill="white"
+                    transform="translate(0 0.5)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 2.17863C21.1819 2.5375 20.3101 2.77538 19.4013 2.89088C20.3363 2.33263 21.0499 1.45537 21.3854 0.398C20.5136 0.91775 19.5511 1.28488 18.5254 1.48975C17.6976 0.608375 16.5179 0.0625 15.2309 0.0625C12.7339 0.0625 10.7236 2.08925 10.7236 4.57387C10.7236 4.93138 10.7539 5.27513 10.8281 5.60238C7.0785 5.4195 3.76062 3.62238 1.53175 0.88475C1.14262 1.55988 0.914375 2.33262 0.914375 3.1645C0.914375 4.7265 1.71875 6.11112 2.91775 6.91275C2.19312 6.899 1.48225 6.68863 0.88 6.35725C0.88 6.371 0.88 6.38888 0.88 6.40675C0.88 8.5985 2.44338 10.419 4.4935 10.8384C4.12638 10.9388 3.72625 10.9869 3.311 10.9869C3.02225 10.9869 2.73075 10.9704 2.45712 10.9099C3.0415 12.696 4.69975 14.0091 6.6715 14.0518C5.137 15.2521 3.18863 15.9754 1.07938 15.9754C0.7095 15.9754 0.35475 15.9589 0 15.9135C1.99787 17.2019 4.36563 17.9375 6.919 17.9375C15.2185 17.9375 19.756 11.0625 19.756 5.10325C19.756 4.90387 19.7491 4.71137 19.7395 4.52025C20.6346 3.885 21.3867 3.09163 22 2.17863Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

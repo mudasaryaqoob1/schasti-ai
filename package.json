@@ -1,12 +1,12 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    }
-  ],
   "scripts": {
-    "build": "npm run build"
+    "preinstall": "chmod +x node_modules/.bin/vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
-
